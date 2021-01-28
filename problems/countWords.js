@@ -14,8 +14,22 @@
 * returns: {}
 */
 
-function countWords() {
-  
-}
+function countWords(arr) {
+    let count = {}
+
+    arr.forEach(word => {
+       if(count[word]){
+          count[word]++
+       } else {
+          count[word] = 1
+       }
+    })
+    return count;
+ };
+
+console.log(countWords(["good", "good", "great"]))
+console.log(countWords(["dog", "cat", "goat"]))
+console.log(countWords([]))
+
 
 module.exports = countWords

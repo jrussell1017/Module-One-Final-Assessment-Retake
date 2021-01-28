@@ -11,8 +11,19 @@
 * returns: ["", "a"]
 */
 
-function removeStringsEndingInBang() {
+function removeStringsEndingInBang(arr) {
+//    let filtered = arr.filter((str) => {
+//         if(str.includes("!") !== 0) {
+//             ???
+//         }
+//      })
+//     return filtered
 
 }
+
+
+
+console.log(removeStringsEndingInBang(["Hello", "Hi!", "Greetings"]))
+console.log(removeStringsEndingInBang(["!", "", "a"]))
 
 module.exports = removeStringsEndingInBang
